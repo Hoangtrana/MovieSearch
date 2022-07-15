@@ -19,7 +19,7 @@ function SearchMovie(props) {
 
     //const query = "Jurassic Park";
 
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=01d72bba97e0bc3d62f7efaacdf2c8a8&language=en-US&query=${query}&page=1&include_adult=false`;
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=${query}&page=1&include_adult=false`;
 
     try {
       const res = await fetch(url);
