@@ -5,7 +5,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(224, 224, 224);
+  background-color: #bdd9f2;
+  color: #181615;
 }
 
 p {
@@ -24,4 +25,70 @@ small {
 .title {
   font-size: 4.4rem;
   text-align: center;
+}
+.form {
+  display: grid;
+}
+
+.label {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.card__list {
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  background-color: #a7bdd9;
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.card__image {
+  border-radius: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  background-color: #aeb9f2;
+  color: #181615;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: #88aabf;
+}
+
+@media (min-width: 786px) {
+  .search__form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
 }
